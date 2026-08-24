@@ -1,0 +1,118 @@
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: #cdd6f4;
+}
+
+tooltip {
+  background: #000000;
+  border: 2.5px solid #8aadf4;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+#workspaces button {
+  /* Empty workspaces: subtle dots. */
+  color: #313244;
+  margin-right: 5px;
+  padding: 0;
+}
+
+/* A workspace with windows, even when it is not currently selected. */
+#workspaces button:not(.empty) {
+  color: #cba6f7;
+}
+
+/* The workspace currently in use.  Keep this after the occupied rule so it wins. */
+#workspaces button.active,
+#workspaces button.visible {
+  color: #89b4fa;
+  text-shadow: 0 0 5px #89b4fa;
+}
+
+#workspaces button.urgent {
+  color: #f38ba8;
+}
+
+#language,
+#cpu,
+#clock,
+#pulseaudio,
+#pulseaudio.microphone,
+#workspaces,
+#tray,
+#memory,
+#disk {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  opacity: 1;
+  padding: 1.5px 7px;
+  margin: 5px;
+  border-radius: 13px;
+}
+
+#workspaces {
+  margin-left: 5px;
+  padding-right: 0;
+}
+
+#cpu {
+  border-radius: 13px 0 0 13px;
+  padding-left: 10px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#memory {
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#disk {
+  border-radius: 0 13px 13px 0;
+  margin-left: 0;
+}
+
+#language {
+  border-radius: 13px 0 0 13px;
+  margin-right: 0;
+}
+
+#pulseaudio,
+#pulseaudio.microphone {
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#battery {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 1.5px 7px;
+  margin: 5px 0;
+  border-radius: 0;
+}
+
+#battery.warning {
+  color: #f9e2af;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
+
+#clock {
+  color: #a6e3a1;
+  border-radius: 0 13px 13px 0;
+  margin-right: 0;
+  margin-left: 0;
+}
